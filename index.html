@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Responsive Webpage</title>
+    
 </head>
+
 <body>
     <div class="nav-bar">
-        <div class="logo">Snapshot</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="logo">
+            Snapshot
+        </div>
+        <nav class="menu">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
+
 
     <!-- Hero section -->
 
@@ -31,36 +44,38 @@
     </div>
 
     <!-- sub-hero section -->
-    <div class="hero-background">
-        <div class="background">
-            <h4>Background</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sint ab rerum obcaecati totam neque quam corrupti dolores? Ipsam tempora consequatur quaerat. Voluptates accusamus molestiae nulla sapiente explicabo tempore possimus?</p>
+    <div id="about">
+        <div class="hero-background">
+            <div class="background">
+                <h4>Background</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sint ab rerum obcaecati totam neque quam corrupti dolores? Ipsam tempora consequatur quaerat. Voluptates accusamus molestiae nulla sapiente explicabo tempore possimus?</p>
+            </div>
+            <div class="hero-background-pos"></div>
         </div>
-        <div class="hero-background-pos"></div>
-    </div>
-    <div class="snapshot-team">
-        <h2>Snapshot Team</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, nesciunt!</p>
-    </div>
-    <div class="snapshot-box">
-        <div class="snapshot-box-content">
-            <div class="box1">
+        <div class="snapshot-team">
+            <h2>Snapshot Team</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, nesciunt!</p>
+        </div>
+        <div class="snapshot-box">
+            <div class="snapshot-box-content">
+                <div class="box1">
+                        <div class="circle"></div>
+                        <h5>Linda, Manager</h5>
+                </div>
+                <div class="box1">
                     <div class="circle"></div>
                     <h5>Linda, Manager</h5>
-            </div>
-            <div class="box1">
-                <div class="circle"></div>
-                <h5>Linda, Manager</h5>
-            </div>
-            <div class="box3">
-                <div class="circle"></div>
-                <h5>Linda, Manager</h5>
+                </div>
+                <div class="box3">
+                    <div class="circle"></div>
+                    <h5>Linda, Manager</h5>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Gallery section -->
-    <div class="gallery-section">
+    <div class="gallery-section" id="gallery">
         <div class="gallery-content">
             <h4>Gallery</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nullae rem!</p>
@@ -86,7 +101,7 @@
     </div>
 
     <!-- Footer section -->
-    <div class="footer">
+    <div class="footer" id="contact">
         <div class="footer-content">
             <h4>Send a message</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nuleos rem!</p>
@@ -103,5 +118,7 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </body>
 </html>
